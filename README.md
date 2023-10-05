@@ -6,5 +6,5 @@ Microindsurance Case 1;
  Celo Chain.
 
 
-Frontend to created at a later date.
+Frontend to be created at a later date.
 
