@@ -4,4 +4,7 @@ Microindsurance Case 1;
 
  Hardhat Framework.
  Celo Chain.
- 
+
+
+Frontend to created at a later date.
+
