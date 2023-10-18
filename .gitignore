@@ -5,7 +5,14 @@ coverage.json
 typechain
 typechain-types
 
-# Hardhat files
-cache
-artifacts
 
+/artifacts
+/cache
+/contracts
+/node_modules
+/scripts
+/test
+/hardhat.config.json
+/package-lock.json
+/package.json
+/ttt.js
