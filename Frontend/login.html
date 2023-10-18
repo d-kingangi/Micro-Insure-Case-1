@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMINSURE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 1rem 0;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FARMINSURE</h1>
+        <p>Connect with your wallet to get started:</p>
+        <button id="connectWallet">Connect Wallet</button>
+    </div>
+
+    <script>
+        // Check if Web3 provider (like MetaMask) is available
+        async function checkWeb3Provider() {
+            if (window.ethereum) {
+                try {
+                    // Request user's permission to connect
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    // Handle successful login
+                    alert('Wallet connected successfully!');
+                    // Redirect or perform other actions here
+                } catch (error) {
+                    alert('Error connecting wallet. Please try again.');
+                    console.error(error);
+                }
+            } else {
+                alert('Web3 provider not found. Please install MetaMask or another compatible wallet.');
+            }
+        }
+
+        // Add event listener to the Connect Wallet button
+        document.getElementById('connectWallet').addEventListener('click', checkWeb3Provider);
+    </script>
+</body>
+</html>
