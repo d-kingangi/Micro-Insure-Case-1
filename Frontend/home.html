@@ -10,20 +10,13 @@
             background-image: url('your-background-image.jpg'); 
             background-size: cover; 
             background-repeat: no-repeat; 
-            background-color: #f4f4f4; 
+            background-color: #719360; 
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 35px 0;
-            position: fixed
-        }
-
+       
         footer {
             background-color: #333;
             color: #fff;
@@ -39,16 +32,21 @@
 <body>
     <header style="background-color: #333; color: #fff; padding: 35px 0; position: fixed; top: 0; width: 100%; z-index: 1;">
         <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <img src="farminsure-logo.png" alt="FARMINSURE Logo" style="height: 50px; width: auto;">
+            <div style="margin-left: 30px;">
+                <img src="farminsure-logo.png" alt="FARMINSURE Logo" style="height: 70px; width: auto;">
             </div>
             <nav style="text-align: left;">
                 <a href="#home" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Home</a>
-                <a href="#about" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">About</a>
-                <a href="#program" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Program</a>
+                <a href="#app" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Our App</a>
+                <a href="#partner" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Partners</a>
                 <a href="#community" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Community</a>
+                <a href="#resources" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Resources</a>
+                <a href="#technology" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Technology</a>
                 <a href="#news" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">News</a>
             </nav>
+            <button style="background-color: #f4f4f4; color: #333; padding: 10px 20px; margin-right: 30px; border-radius: 10px;">
+                Sign-In/Sign-Up
+            </button>
         </div>
     </header>
     
@@ -76,6 +74,8 @@
         
     </section>
 
+    <hr>
+
     <section id="livestock-insurance" class="product">
         <div class="product-image">
             <img src="pexels-matthias-zomer-422218.jpg" alt="Livestock Insurance Image" style="max-width: 100%; height: auto;">
@@ -94,7 +94,22 @@
         
         
     </section>
+
     <hr>
+
+    <section style="background-color: #333; color: #f4f4f4; text-align: center;">
+        <h2 style="font-size: 35px;">Our Impact</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="font-size: 15px;">O Farmers Insured</li>
+            <li style="font-size: 15px;">$0 released in payouts</li>
+            <li style="font-size: 15px;">0 Acreage Protected</li>
+            <li style="font-size: 15px;">0 Livestock Insured</li>
+        </ul>
+    </section>
+    
+
+    <hr>
+
     <section id="contact" class="contact">
         <h2 style="text-align: center;">Contact Us</h2>
     <p style="text-align: center;">Have questions or need assistance? Feel free to reach out to us using the form below.</p>
