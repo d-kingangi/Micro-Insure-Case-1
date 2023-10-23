@@ -16,20 +16,12 @@
             font-family: Arial, sans-serif;
         }
 
-        .custom-paragraph {
-            background-color: #89A7A7; 
-            padding: 20px; 
-            font-family: 'Helvetica', Arial, sans-serif; 
-            font-size: 16px; 
-            line-height: 1.5;
-            color: #333; 
-        }
-
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 35px 0;
+            position: fixed
         }
 
         footer {
@@ -39,63 +31,34 @@
             padding: 1rem 0;
         }
 
-        footer p {
-            margin: 0;
-        }
-
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
+        
 
         
     </style>
     </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="farminsure-logo.png" alt="FARMINSURE Logo">
+    <header style="background-color: #333; color: #fff; padding: 35px 0; position: fixed; top: 0; width: 100%; z-index: 1;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <img src="farminsure-logo.png" alt="FARMINSURE Logo" style="height: 50px; width: auto;">
             </div>
-        </nav>
-        <div class="hero">
-            <h1>Protecting Your Agriculture Investment</h1>
-            <p>Secure your crops and livestock with FARMINSURE</p>
-            <button .cta-button {
-                display: inline-block;
-                background-color: #333;
-                color: #fff;
-                border: none;
-                padding: 0.5rem 1rem;
-                border-radius: 5px;
-                text-decoration: none;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-            
-            .cta-button:hover {
-                background-color: #555;
-            }
-            
-            .cta-button a {
-                color: #fff;
-                text-decoration: none;
-            }
-            >
-                <a href="login.html">Get Started</a>
-            </button>
-            
+            <nav style="text-align: left;">
+                <a href="#home" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Home</a>
+                <a href="#about" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">About</a>
+                <a href="#program" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Program</a>
+                <a href="#community" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">Community</a>
+                <a href="#news" style="color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold;">News</a>
+            </nav>
         </div>
     </header>
+    
 
     <section id="crop-insurance" class="product">
+        <div class="product-image">
+            <img src="pexels-todd-trapani-1382102.jpg" alt="Crop Insurance Image" style="max-width: 100%; height: auto;">
+        </div>
         <div class="product-description">
-            <h2>Crop Insurance</h2>
+            <h2 style="text-align: center;">Crop Insurance</h2>
             <p>Farmers are intimately familiar with the capricious nature of agriculture. From unseasonal weather patterns to persistent pests, a multitude of factors can cast a shadow of uncertainty over your harvest. Crop failures not only jeopardize your livelihood but also challenge your financial stability. At FARMINSURE, we understand the immense dedication and hard work you invest in your fields, and we're committed to being your partner in success.
 
                 Our Crop Insurance goes beyond the assurance of financial security; it's a shield that guards against the unpredictability of nature. We're here to ensure that even in the face of adversity, you have the resources and support necessary to recover your investment and maintain your agricultural operations.
@@ -105,88 +68,91 @@
                 With FARMINSURE's Crop Insurance, you can navigate the challenges of farming with confidence, knowing that your dedication and hard work are protected. Our experienced team works closely with you to tailor policies that meet your specific needs, and our efficient claims process ensures that you receive the support you deserve during difficult times.
                 
                 In partnership with FARMINSURE, you can continue to sow the seeds of prosperity, knowing that we'll be there to help you weather any storm, both metaphorical and meteorological.</p>
-                <button .cta-button {
-                    display: inline-block;
-                    background-color: #333;
-                    color: #fff;
-                    border: none;
-                    padding: 0.5rem 1rem;
-                    border-radius: 5px;
-                    text-decoration: none;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                }
-                
-                .cta-button:hover {
-                    background-color: #555;
-                }
-                
-                .cta-button a {
-                    color: #fff;
-                    text-decoration: none;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                }
-                >
-                    <a href="mailto:info@farminsure.com">Get a Quote</a>
-                </button>
+                <div style="text-align: center;">
+                    <a href="login.html" style="text-decoration: none; color: #333; font-weight: bold;">Insure your crops</a>
+                </div>
                 
         </div>
-        <div class="product-image">
-            <img src="pexels-todd-trapani-1382102.jpg" alt="Crop Insurance Image" style="max-width: 100%; height: auto;">
-        </div>
+        
     </section>
 
     <section id="livestock-insurance" class="product">
+        <div class="product-image">
+            <img src="pexels-matthias-zomer-422218.jpg" alt="Livestock Insurance Image" style="max-width: 100%; height: auto;">
+        </div>
         <div class="product-description">
-            <h2>Livestock Insurance</h2>
+            <h2 style="text-align: center;">Livestock Insurance</h2>
             <p>Your livestock plays a pivotal role in the overall success of your farm. These animals are not just an investment; they're the lifeblood of your agricultural endeavors. However, as a farmer, you're well aware of the inherent risks. Unpredictable circumstances like diseases, accidents, and natural disasters can lead to significant losses in your livestock. This is where Livestock Insurance from FARMINSURE steps in to safeguard your interests.
 
                 Our comprehensive Livestock Insurance coverage encompasses a wide range of animals, including cattle, poultry, goats, sheep, and more. We understand the importance of ensuring the well-being and longevity of your livestock. With our tailored policies, you can rest assured that you're prepared for the unexpected. Whether it's protecting your dairy cattle, poultry farms, or valuable breeding stock, we've got you covered.
                 
                 Our expert team works closely with you to design a policy that aligns with your unique needs and priorities. With Livestock Insurance from FARMINSURE, you can mitigate the financial impact of unforeseen events, maintain the health and productivity of your animals, and continue your farming operations with confidence</p>
-                <button .cta-button {
-                    display: inline-block;
-                    background-color: #333;
-                    color: #fff;
-                    border: none;
-                    padding: 0.5rem 1rem;
-                    border-radius: 5px;
-                    text-decoration: none;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                }
-                
-                .cta-button:hover {
-                    background-color: #555;
-                }
-                
-                .cta-button a {
-                    color: #fff;
-                    text-decoration: none;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                }
-                >
-                    <a href="mailto:info@farminsure.com">Get a Quote</a>
-                </button>
-        </div>
-        <div class="product-image">
-            <img src="pexels-matthias-zomer-422218.jpg" alt="Livestock Insurance Image" style="max-width: 100%; height: auto;">
+                <div style="text-align: center;">
+                    <a href="login.html" style="text-decoration: none; color: #333; font-weight: bold;">Insure your livestock</a>
+                </div>
         </div>
         
+        
     </section>
-
+    <hr>
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? Our team is here to help you. Feel free to reach out to us for any inquiries or support.</p>
-        <a href="mailto:info@farminsure.com" class="cta-button">Email Us</a>
+        <h2 style="text-align: center;">Contact Us</h2>
+    <p style="text-align: center;">Have questions or need assistance? Feel free to reach out to us using the form below.</p>
+
+
+    <form action="" method="post" style="text-align: center;">
+        <div style="margin-bottom: 10px;">
+            <label for="name" style="display: block;" >Your Name:</label>
+            <input type="text" id="name" name="name" required style="width: 75%;">
+        </div>
+    
+        <div style="margin-bottom: 10px;">
+            <label for="email" style="display: block;" >Your Email:</label>
+            <input type="email" id="email" name="email" required style="width: 75%;">
+        </div>
+    
+        <div style="margin-bottom: 10px;">
+            <label for="county" style="display: block;">Your County:</label>
+            <input type="text" id="county" name="county" required style="width: 75%;">
+        </div>
+    
+        <div style="margin-bottom: 10px;">
+            <label for="message" style="display: block;">Message:</label>
+            <textarea id="message" name="message" rows="4" required style="width: 75%;"></textarea>
+        </div>
+    
+        <button type="submit" style="padding: 10px 20px; background-color: #333; color: #fff; border: none; cursor: pointer;">Submit</button>
+    </form>
+
+    <hr>
+
     </section>
 
     <footer>
-        <p>&copy; 2023 FARMINSURE - Agriculture Insurance Platform</p>
+        <div style="float: left; text-align: left; width: 50%;">
+            <p><h3>Menu</h3></p>
+            <ul>
+                <li><button style="background-color: #333; color: #fff; padding: 0; outline: none;">Home</button></li>
+                <li><button style="background-color: #333; color: #fff; padding: 0; outline: none;">About</button></li>
+                <li><button style="background-color: #333; color: #fff; padding: 0; outline: none;">Program</button></li>
+                <li><button style="background-color: #333; color: #fff; padding: 0; outline: none;">Community</button></li>
+                <li><button style="background-color: #333; color: #fff; padding: 0; outline: none;">News</button></li>
+            </ul>
+            
+            
+        </div>
+    
+        <div style="float: right; text-align: left; width: 50%;">
+            <p><h3>Contact Us</h3></p>
+            <p>Email: info@farminsure.com</p>
+            <p>Phone: +254 00000001</p>
+            <p>General Inquiries: info@farminsure.com </p>
+            <p>Community: community@farminsure.com</p>
+        </div>
+        <div style="text-align: center;">
+            <p>&copy; 2023 by FARMINSURE - Agriculture Insurance Platform. All rights reserved</p>
+        </div>
+        
     </footer>
 </body>
 </html>
