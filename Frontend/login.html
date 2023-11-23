@@ -39,24 +39,29 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>FARMINSURE</h1>
+<body style="grid-auto-rows: min-content;">
+    
+    <div >
+        <button id="connectWallet" style="background-color: #fff; font-size: 15px; color: #333; border-radius: 3px;">Connect Wallet</button>
         <p>Connect with your wallet to get started:</p>
-        <button id="connectWallet">Connect Wallet</button>
+    </div>   
+    <div>
+        <button id="connectWallet" style="background-color: #fff; font-size: 15px; color: #333; border-radius: 3px;">Sign Up/Login</button>
         <p>Connect with your Gmail to get started:</p>
-        <button id="connectWallet">Sign Up/Login</button>
-        <p>Connect with your Apple ID to get started:</p>
-        <button id="connectWallet">Sign Up/Login</button>
-        <p>Connect with your Use another Email provider:</p>
-        <button id="connectWallet">Enter Email</button>
+    </div>
+    <div>
+        <button id="connectWallet" style="background-color: #fff; font-size: 15px; color: #333; border-radius: 3px;">Enter D_ID</button>
+        <p>Connect with your D_ID to get started:</p>
+    </div>
+        <button id="connectWallet" style="background-color: #fff; font-size: 15px; color: #333; border-radius: 3px;">Enter Email</button>
+        <p>Connect with your Use another Mail provider:</p>
     </div>
     <div class="container">
-
+        <h1>FARMINSURE</h1>
     </div>
 
     <script>
-        // Check if Web3 provider (like MetaMask) is available
+        // Check if Web3 provider is available
         async function checkWeb3Provider() {
             if (window.ethereum) {
                 try {

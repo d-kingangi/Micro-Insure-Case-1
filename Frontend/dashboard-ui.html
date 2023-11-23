@@ -15,69 +15,95 @@
         .left-section {
             flex: 1;
             background-color: #333;
-            width: 20%
-            height: 100%
+            width: 20%;
+            min-height: 100%;
+            align-items: center;
+
         }
 
         .right-section {
             flex: 4;
             background-color: #f4f4f4;
         }
+
+        .top-left{
+            border-radius: 5px;
+            text-align: center;
+            gap: 20px;
+            
+        }
+
+        .top-right{
+            text-align: center;
+            
+        }
+
+        .bottom-left{
+            text-align: center;
+            
+        }
+
+        .bottom-right{
+            text-align: center;
+            
+        }
+
+        
     </style>
 </head>
 <body>
     <div class="left-section">
-        <button style="display: block; width: 100%; padding: 30px 10px; background-color: #333; color: #fff; text-align: center; border: none; text-decoration: none; cursor: pointer; font-size: 18px;">
+        <button style="align: middle">
             Account🔒
-        </button>
-        <button style="display: block; width: 100%; padding: 30px 10px; background-color: #333; color: #fff; text-align: center; border: none; text-decoration: none; cursor: pointer; font-size: 18px;">
+        </button><br>
+        <button>
             Transactions📁
-        </button>
-        <button style="display: block; width: 100%; padding: 30px 10px; background-color: #333; color: #fff; text-align: center; border: none; text-decoration: none; cursor: pointer; font-size: 18px;">
+        </button><br>    
+        <button>
             Contracts
-        </button>
-        <button style="display: block; width: 100%; padding: 30px 10px; background-color: #333; color: #fff; text-align: center; border: none; text-decoration: none; cursor: pointer; font-size: 18px;">
+        </button><br>
+        <button >
             Payouts💵
-        </button>
-        <button style="display: block; width: 100%; padding: 30px 10px; background-color: #333; color: #fff; text-align: center; border: none; text-decoration: none; cursor: pointer; font-size: 18px;">
+        </button><br>
+        <button >
             Search🔎
-        </button>
-        <button style="display: block; width: 100%; padding: 30px 10px; background-color: #333; color: #fff; text-align: center; border: none; text-decoration: none; cursor: pointer; font-size: 18px;">
+        </button><br>
+        <button >
             Settings⚙️
-        </button>
-        <div style="text-align: center; margin: 20px;">
+        </button><br>
+        <div class="">
             <img src="user-profile.jpg" alt="User Profile" style="width: 200px; height: 150px; border-radius: 50%;">
-            <p style="font-size: 16px; color: #fff; margin: 10px 0;">Mary Njenga</p>
-            <p style="font-size: 14px; color: #fff; margin: 0;">0x578dngmf0tiienvkndfitjdkeo499ekgbgurngk9</p>
+            <p style="font-size: 16px; color: #fff; margin: 10px 0;">Mary <br>Njenga</p>
+            <p style="font-size: 14px; color: #fff; margin: 0;">0x578dngm...</p>
         </div>
     </div>
     
     <div class="right-section"> 
-        <div class="right-section" style="background-color: #f4f4f4; padding: 20px;">
-            <div class="top-left" style="border: 1px solid #ccc; padding: 10px;">
+        <div class="right-section" >
+            <div class="top-left">
                 <h3 style="color: #333;">Account</h3>
                 <p style="color: #777;">Balance: $18,677.00 USD</p>
             </div>
-            <div class="top-right" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
+            <div class="top-right">
                 <h3 style="color: #333;">Transactions</h3>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
+                <p style="color: #777;"> Hash: 0x5d85a13b...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt...Hash: 0x5d85a13b...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt...Hash: 0x5d85a13b...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt...Hash: 0x5d85a13b...</p>
             </div>
-            <div class="bottom-left" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
+            <div class="bottom-left" >
                 <h3 style="color: #333;">Payouts💵</h3>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt...Hash: 0x5d85a13b...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt...Hash: 0x5d85a13be...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt...Hash: 0x5d85a13b...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt...Hash: 0x5d85a13be962c....</p>
             </div>
-            <div class="bottom-right" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
+            <div class="bottom-right">
                 <h3 style="color: #333;">Contracts</h3>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
-                <p style="color: #777;">Hash: 0x5d85a13be962c36c1526a52349ab5b5a8e176b8debb1c7e462a419e5a1a52d3</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt... Hash: 0x5d85a13b...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt... Hash: 0x5d85a13...</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt... Hash: 0x5d85a13b....</p>
+                <p style="color: #777;">From: 0x578dngm...: To: Hash:0x5d85gt... Hash: 0x5d85a13b...</p>
             </div>
         </div>
            
